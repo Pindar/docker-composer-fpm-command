@@ -8,7 +8,7 @@ RUN apt-get update -qq && \
 	apt-get -y clean
 
 # install FPM
-RUN apt-get install -y -qq php5-fpm php5-cli && \
+RUN apt-get install -y -qq php5-fpm php5-cli php5-curl && \
 	apt-get -y clean
 
 # install composer
